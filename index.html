@@ -1,1 +1,40 @@
-<h1>Hello world</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ruby hash to JSON formater</title>
+    <script src="ru2json.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <style>
+p#json-result{
+  white-space: pre;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div id="header" class="row">
+        <h1 class="text-center">Ruby hash to JSON formater</h1>
+      </div>
+
+      <div id="ruby-hash-container" class="row text-center">
+        <form id="ruby-form" method="post">
+          <textarea id="ruby-hash-textarea" name="ruby-hash" cols="120" rows="15" placeholder="paste your ruby hash here" required autofocus></textarea>
+        </form>
+        <br>
+        <button id="r2j-submit" type="button" class="btn btn-default" form="ruby-form">To JSON</button>
+        <button id="r2j-clear" type="button" class="btn btn-default" form="ruby-form">Clear</button>
+      </div>
+
+      <div id="result-container">
+        <p id="json-result"></p>
+      </div>
+
+    </div>
+  </body>
+</html>
