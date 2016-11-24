@@ -1,0 +1,1 @@
+wkhtmltopdf --print-media-type index.html index.pdf

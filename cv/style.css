@@ -1,87 +1,85 @@
-/*
- * Copyright 2013 vlamy.fr <vlamy[at]vlamy[dot]fr>
- *
- * CSS for making a resume with pandoc.
- * Inspired from chmduquesne : (https://git.chmd.fr/?p=resume.git)
- *
- * License CC BY-SA
- * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
- */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
 
-/* Whole document */
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    width: 800px;
-    margin: auto;
-    background: #FFFFFF;
-    padding: 10px 10px 10px 10px;
+  background-color: #e5dfd7;
+  /* background-color: #f7f4ef; */
 }
 
-a:hover {
-  text-decoration: underline;
+code {
+  background-color: #dbd6ce;
+  color: #914f4f;
 }
 
-/* Title of the resume */
-h1 {
-    font-size: 45px;
-    color: #4F5AB5;
-    text-align:center;
-    margin-bottom:15px;
-}
-
-/* Titles of categories */
-h2 {
-    color: #4F5AB5;
-}
-/* There is a bar just before each category */
-h2:before {
-    content: "";
-    display: inline-block;
-    margin-right:3%;
-    width: 33%;
-    height: 10px;
-    background-color: #4F5AB5;
-}
-
-/* There is a bar just after each category */
-h2:after {
-    content: "";
-    display: inline-block;
-    margin-left:3%;
-    width: 33%;
-    height: 10px;
-    background-color: #4F5AB5;
-}
-
-/* Definitions */
-dt {
-    padding-top: 10px;
-    float: left;
-    clear: left;
-    width: 17%;
-    /*font-weight: bold;*/
-}
-dd {
-    margin-left: 17%;
-    padding-top: 10px;
-}
-p {
-    margin-top:0;
-    margin-bottom:7px;
-}
-
-/* Blockquotes */
-blockquote {
-    text-align: center
-}
-
-/* Links */
 a {
-    text-decoration: none;
-    color: #4F5AB5;
+  color: #4f7591;
 }
 
-/* Horizontal separators */
-hr {
-    color: #4F5AB5
+.btn-primary {
+  color: #fff;
+  background-color: #4f7591;
+  border-color: #4f7591;
 }
+
+.container {
+  width: 65%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding-top: 2%;
+}
+
+.header h1 {
+  padding-bottom: 5%;
+}
+
+.quote blockquote {
+  border-left: none;
+  font-style: italic;
+  font-size: 1.2em;
+  padding: 1%;
+}
+
+.infos {
+  font-size: 1.2em;
+}
+
+.pdf {
+  padding-top: 3%;
+}
+
+.photo {
+  padding-top: 3%;
+  opacity: 0.85;
+}
+
+.stars {
+  padding-left: 10px;
+}
+
+@media print {
+  .header-right {
+    display: none;
+  }
+
+  .pdf {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  blockquote {
+    border: none;
+  }
+
+  #skills {
+     padding-top: 10%;
+  }
+}
+
